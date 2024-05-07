@@ -1,14 +1,12 @@
-package pertemuan8.soal1;
-
 public class Car extends Vehicle{
-    enum CarTpype{
+    enum CarType{
         PREMIUM_CAR,
         FAMILY_CAR,
         CITY_CAR
     }
-    private CarTpype CarType;
+    private CarType CarType;
 
-    public Car(String brand, int year, double rentalPrice, CarTpype CarType){
+    public Car(String brand, int year, double rentalPrice, CarType CarType){
         super(brand, year, rentalPrice);
         this.CarType = CarType;
     }
