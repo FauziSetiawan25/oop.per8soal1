@@ -1,5 +1,3 @@
-package pertemuan8.soal1;
-
 public class Vehicle {
     private String brand;
     private int year;
