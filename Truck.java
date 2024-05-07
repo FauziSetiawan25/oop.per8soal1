@@ -1,13 +1,11 @@
-package pertemuan8.soal1;
-
 public class Truck extends Vehicle{
     private int cargoCapacity;
+    public int getCargoCapacity() {
+        return cargoCapacity;
+    }
     public Truck(String brand, int year, double rentalPrice, int cargoCapacity){
         super(brand, year, rentalPrice);
         this.cargoCapacity = cargoCapacity;
-    }
-    public int getCargoCapacity() {
-        return cargoCapacity;
     }
     public void cekCargo(){
         if(getCargoCapacity() > 2000){
@@ -20,6 +18,5 @@ public class Truck extends Vehicle{
         System.out.println("Kapasitas Kargo : " + getCargoCapacity());
         cekCargo();
         super.displayDisc();
-
     }
 }
